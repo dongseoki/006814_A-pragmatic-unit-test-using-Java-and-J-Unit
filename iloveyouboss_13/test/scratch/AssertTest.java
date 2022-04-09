@@ -102,7 +102,7 @@ public class AssertTest {
       assertThat(account.getBalance() > 0, is(true));
    }
    
-   @Ignore
+//   @Ignore
    @ExpectToFail
    @Test
    public void comparesArraysFailing() {
@@ -128,7 +128,7 @@ public class AssertTest {
             equalTo(Arrays.asList(new String[] {"a"})));
    }
    
-   @Ignore
+//   @Ignore
    @Test
    public void testWithWorthlessAssertionComment() {
       account.deposit(50);
@@ -223,7 +223,7 @@ public class AssertTest {
    
    @Test(expected=InsufficientFundsException.class)
    public void throwsWhenWithdrawingTooMuch() {
-      account.withdraw(100);
+//      account.withdraw(100);
    }
    
    @Test
@@ -239,7 +239,7 @@ public class AssertTest {
    
    @Test
    public void readsFromTestFile() throws IOException {
-      String filename = "test.txt";
+      String filename = "tedsdcfzfdsst.txt";
       BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
       writer.write("test data");
       writer.close();

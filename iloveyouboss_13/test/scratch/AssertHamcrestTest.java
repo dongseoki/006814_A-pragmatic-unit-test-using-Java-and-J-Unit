@@ -16,7 +16,7 @@ import static org.hamcrest.number.IsCloseTo.*;
 
 public class AssertHamcrestTest {
    @Test
-   @Ignore
+//   @Ignore
    @ExpectToFail
    public void assertDoublesEqual() {
       assertThat(2.32 * 3, equalTo(6.96));
